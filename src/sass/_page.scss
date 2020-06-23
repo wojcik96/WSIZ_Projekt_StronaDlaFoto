@@ -1,0 +1,26 @@
+body {
+   font-family: $mainFont;
+}
+
+body::-webkit-scrollbar {
+   width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+   background-color: $color-theme_bacground-1-hex;
+   outline: 1px solid $color-theme_bacground-3-hex;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+.wrapper {
+   box-sizing: border-box;
+   width: 100%;
+   overflow: hidden;
+}

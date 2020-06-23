@@ -1,0 +1,27 @@
+$mainFont:'Baloo 2',
+cursive;
+$titleFont: 'Raleway',
+sans-serif;
+
+$breakpoints:(smartphone : (min-width:410px),
+   smartphone-large : (min-width:640px),
+   tablet : (min-width:800px),
+   tablet-large : (min-width:1024px),
+   desktop-small : (min-width:1280px),
+   desktop-medium : (min-width:1600px),
+   desktop-large : (min-width:1900px),
+);
+
+/* Color Theme Swatches in Hex */
+$color-theme_bacground-1-hex: #7263A6;
+$color-theme_bacground-2-hex: #09102C;
+$color-theme_bacground-3-hex: #E8D1D3;
+$color-theme_bacground-4-hex: #2A2430;
+$color-theme_bacground-5-hex: #0D0D0D;
+
+/* Color Theme Swatches in RGBA */
+$color-theme_bacground-1-rgba: rgba(114, 99, 166, 1);
+$color-theme_bacground-2-rgba: rgba(9, 16, 44, 1);
+$color-theme_bacground-3-rgba: rgba(232, 209, 211, 1);
+$color-theme_bacground-4-rgba: rgba(42, 36, 48, 1);
+$color-theme_bacground-5-rgba: rgba(13, 13, 13, 1);
