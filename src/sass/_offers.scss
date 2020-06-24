@@ -1,0 +1,117 @@
+.offers {
+   min-height: 100vh;
+   width: 100%;
+
+}
+
+.offers__title {
+   font-size: 24px;
+   font-family: $titleFont;
+   text-align: center;
+   padding: 50px 0 0;
+
+   @include mediaQ(tablet) {
+      font-size: 28px;
+   }
+
+   @include mediaQ (tablet-large) {
+      font-size: 35px;
+
+   }
+}
+
+.offers__container {
+   width: 100%;
+   min-height: 100vh;
+}
+
+.offers__grid-container {
+   text-align: center;
+   margin: 20px 15px;
+
+   & .offers__offert:nth-child(1) {
+      grid-area: a;
+   }
+
+   & .offers__offert:nth-child(2) {
+      grid-area: b;
+   }
+
+   & .offers__offert:nth-child(3) {
+      grid-area: c;
+   }
+
+   & .offers__offert:nth-child(5) {
+      grid-area: d;
+   }
+
+   & .offers__offert:nth-child(6) {
+      grid-area: e;
+   }
+
+   & .offers__offert:nth-child(7) {
+      grid-area: f;
+   }
+
+
+   @include mediaQ(smartphone-large) {
+      margin: 25px 35px;
+   }
+
+   @include mediaQ(tablet) {
+      display: grid;
+      grid-template-columns: repeat(13, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 1px 1px;
+      grid-template-areas:
+         ". a a a . b b b . c c c ."
+         ". . . . . img img img . . . . ."
+         ". d d d . e e e . f f f .";
+   }
+
+   @include mediaQ(tablet-large) {
+      display: grid;
+      grid-template-columns: repeat(15, 1fr);
+      grid-template-rows: 1fr 2fr 1fr;
+      gap: 1px 1px;
+      grid-template-areas:
+         ". . a a a . . . . . b b b . ."
+         ". c c c . img img img img img img d d d ."
+         ". . e e e e . . . f f f f . .";
+   }
+
+   @include mediaQ(desktop-small) {
+      grid-template-areas:
+         ". . a a a a . . . b b b b . ."
+         "c c c c . . img img img img img d d d d"
+         ". . e e e e . . . f f f f . .";
+   }
+}
+
+.offers__offert {
+   font-size: 16px;
+   align-self: center;
+
+   @include mediaQ(smartphone) {
+      font-size: 20px;
+   }
+
+   @include mediaQ(tablet-large) {
+      font-size: 23px;
+   }
+}
+
+.offers__image {
+   grid-area: img;
+   height: 200px;
+
+   @include mediaQ(tablet) {
+      height: 270px;
+      align-self: center;
+   }
+
+   @include mediaQ(tablet-large) {
+      height: 400px;
+
+   }
+}

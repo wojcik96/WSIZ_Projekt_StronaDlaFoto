@@ -1,0 +1,95 @@
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   text-align: center;
+   color: $color-theme_bacground-3-hex;
+   background-color: $color-theme_bacground-5-hex;
+
+   @include mediaQ(smartphone-large) {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      min-height: 200px;
+   }
+}
+
+.footer__title {
+   @include mediaQ(smartphone) {
+      font-size: 35px;
+   }
+
+   @include mediaQ(smartphone-large) {
+      width: 100%;
+      text-align: center;
+   }
+}
+
+.footer__person-information {
+   @include mediaQ(smartphone) {
+      font-size: 22px;
+   }
+}
+
+.footer__link {
+   color: $color-theme_bacground-3-hex;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.contact {
+   width: 100%;
+   margin: 0;
+}
+
+.contact__label {
+   width: 90%;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.contact__name,
+.contact__email,
+.contact__message {
+   width: 90%;
+   margin: 20px auto;
+   padding: 5px 0;
+   background-color: #000;
+   border: none;
+   font-size: 18px;
+   color: white;
+   border-bottom: 2px solid white;
+   outline: none;
+   transition: all .3s;
+
+   &:focus {
+      background-color: #fff;
+      color: #000;
+   }
+
+   @include mediaQ(tablet) {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+
+.contact__btn {
+   margin: 21px auto;
+   padding: 15px 25px;
+   border: 2px solid $color-theme_bacground-3-hex;
+   background-color: rgba(0, 0, 0, .8);
+   color: $color-theme_bacground-3-hex;
+   letter-spacing: 4px;
+   font-family: $titleFont;
+   outline: 0;
+   transition: letter-spacing .2s linear;
+
+   &:hover {
+      cursor: pointer;
+      letter-spacing: 5px;
+      box-shadow: 0 0 0 rgba(0, 170, 170, 0.5), 0 0 2.5em rgba(0, 170, 170, 0.7);
+   }
+}

@@ -1,0 +1,88 @@
+.about-as {
+   margin-top: 1px;
+   padding-top: 50px;
+   width: 100%;
+   min-height: 100vh;
+}
+
+.about-as___text-content {
+   width: 80%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.about-as__title {
+   @include mediaQ(smartphone) {
+      font-size: 34px;
+      letter-spacing: 1px;
+   }
+}
+
+.about-as__description {
+   margin: 75px auto;
+
+   @include mediaQ(smartphone) {
+      font-size: 28px;
+      letter-spacing: 1px;
+   }
+
+   @include mediaQ(tablet) {
+      margin: 150px auto;
+   }
+}
+
+.about-as__pictures {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   min-height: 1000px;
+}
+
+.about-as__cointeiner-of-as {
+   width: 90%;
+   text-align: center;
+   margin: 20px 0;
+   box-shadow: 0 10px 4rem rgba(42, 36, 48, .3);
+
+   @include mediaQ(tablet) {
+      display: flex;
+   }
+}
+
+.about-as__description-conteiner {
+   @include mediaQ(tablet) {
+      align-self: center;
+      margin: 0 50px;
+   }
+}
+
+.about-as__our-picture {
+   width: 220px;
+   margin: 15px;
+
+   @include mediaQ(smartphone) {
+      width: 300px;
+   }
+}
+
+.about-as__cointeiner-of-as--Celina {
+   @include mediaQ(tablet) {
+      flex-direction: row-reverse;
+   }
+
+}
+
+.about-as__name {
+   @include mediaQ(smartphone) {
+      font-size: 30px;
+   }
+}
+
+.abou-as__about-me {
+   margin: 15px 15px;
+
+   @include mediaQ(smartphone) {
+      font-size: 25px;
+   }
+}
