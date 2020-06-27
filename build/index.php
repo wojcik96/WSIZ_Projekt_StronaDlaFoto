@@ -119,10 +119,14 @@
       <footer class="footer" id="footer">
          <h3 class="footer__title">Kontakt</h3>
          <section class="contact">
-            <forms class="contact__label"><input class="contact__name" type="text" placeholder="Twoje imię i nazwisko">
-               <input class="contact__email" type="text" placeholder="Twój e-mail"> <input class="contact__message"
-                  type="text" placeholder="Napisz wiadomość"> <button class="contact__btn">Wyślij wiadomość</button>
-            </forms>
+            <form action="post.php" method="post">
+               <forms class="contact__label">
+               <input class="contact__name" name="name" type="text"placeholder="Twoje imię i nazwisko">
+               <input class="contact__email" name="email" type="text" placeholder="Twój e-mail">
+               <input class="contact__message"name="message" type="text" placeholder="Napisz wiadomość"> 
+               <button class="contact__btn">Wyślij wiadomość</button>
+               </forms>
+            </form>
          </section>
          <section class="footer__person-information">
             <p class="footer__name">Alicja Kowalska</p>
