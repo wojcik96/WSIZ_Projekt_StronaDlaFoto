@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600&family=Raleway:ital,wght@0,400;0,600;1,300&display=swap"
       rel="stylesheet">
    <title>StronaDlaFoto</title>
-   <link href="main-87a9e9b8ed612d3f309f.css" rel="stylesheet">
+   <link href="main-f28704965983f1c803b3.css" rel="stylesheet">
 </head>
 
 <body>
@@ -119,13 +119,11 @@
       <footer class="footer" id="footer">
          <h3 class="footer__title">Kontakt</h3>
          <section class="contact">
-            <form action="post.php" method="post">
-               <forms class="contact__label">
-               <input class="contact__name" name="name" type="text"placeholder="Twoje imię i nazwisko">
-               <input class="contact__email" name="email" type="text" placeholder="Twój e-mail">
-               <input class="contact__message"name="message" type="text" placeholder="Napisz wiadomość"> 
-               <button class="contact__btn">Wyślij wiadomość</button>
-               </forms>
+            <form class="contact__label" action="post.php" method="post">
+               <input class="contact__name" type="text" placeholder="Twoje imię i nazwisko">
+               <input class="contact__email" type="text" placeholder="Twój e-mail">
+               <input class="contact__message" type="text" placeholder="Napisz wiadomość">
+               <button class="contact__btn" type="submit">Wyślij wiadomość</button>
             </form>
          </section>
          <section class="footer__person-information">
@@ -140,7 +138,7 @@
          </section>
       </footer>
    </div>
-   <script type="text/javascript" src="js/main-82f9510671ed7f4e8f6d.js"></script>
+   <script type="text/javascript" src="js/main-25b3d70dd466e62c0269.js"></script>
 </body>
 
 </html>
