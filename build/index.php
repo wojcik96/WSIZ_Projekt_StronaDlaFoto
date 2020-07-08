@@ -120,9 +120,9 @@
          <h3 class="footer__title">Kontakt</h3>
          <section class="contact">
             <form class="contact__label" action="post.php" method="post">
-               <input class="contact__name" type="text" placeholder="Twoje imię i nazwisko">
-               <input class="contact__email" type="text" placeholder="Twój e-mail">
-               <input class="contact__message" type="text" placeholder="Napisz wiadomość">
+               <input class="contact__name" name="name" type="text" placeholder="Twoje imię i nazwisko">
+               <input class="contact__email" name="email" type="text" placeholder="Twój e-mail">
+               <input class="contact__message" name="message" type="text" placeholder="Napisz wiadomość">
                <button class="contact__btn" type="submit">Wyślij wiadomość</button>
             </form>
          </section>
